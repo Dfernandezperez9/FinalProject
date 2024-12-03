@@ -1,0 +1,14 @@
+{
+  "name": "las_vacaciones_del_data",
+  "version": "1.0.0",
+  "description": "Original Game",
+  "main": "index.php",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "David Fernandez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
