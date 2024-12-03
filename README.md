@@ -21,7 +21,4 @@ DEPENDENCIAS EMPLEADAS:
 MODO DE EMPLEO:
 
 -Debes asegurarte de tener instalado "Node.js" en tu ordenador.
--Instala Express a traves de el terminal de tu IDE mediante el comando "npm i express".
--Ejecuta el comando "node server.js" en el terminal de tu IDE.
--Accede a la URL "http://localhost:4000/" a traves de tu navegador.
--Sigue las instrucciones mostradas en pantalla.
+-Clona este repositorio directamente y ejecuta "node server.js" o accede directamente a la siguiente URL: "https://finalproject-bu68.onrender.com/"
