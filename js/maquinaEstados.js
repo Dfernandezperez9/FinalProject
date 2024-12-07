@@ -25,9 +25,12 @@ const maquinaEstados = {
                 document.body.appendChild(carga);
 
                 setTimeout(function() {
-                    document.getElementById("info").style.display = "initial";
                     maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.MAPAMUNDI, "mapas/Valdemoro.json?v=" + Date.now(), 624, 48);    
                 }, 300);
+
+                setTimeout(function() {
+                    document.getElementById("info").style.display = "initial";
+                }, 1000);
                 
                 controlesTeclado.arriba = null;
                 controlesTeclado.abajo = null;
