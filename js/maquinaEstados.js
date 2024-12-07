@@ -50,6 +50,7 @@ const maquinaEstados = {
                 break;
 
             case listadoEstados.NIVEL:
+                document.body.appendChild(carga);
                 maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);     
                 
                 controlesTeclado.arriba = null;
@@ -125,7 +126,7 @@ const maquinaEstados = {
                 }
 
                 let intervaloId = setInterval(reducirVolumen, 150);
-                
+                document.body.appendChild(carga);
                 maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.FINAL, "mapas/Valdemoro.json?v=" + Date.now(), 480, 288);
                 reducirVolumen();
         
