@@ -79,7 +79,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada dos") {
                     document.body.appendChild(carga);
                     setTimeout(function() {
-                        this.jugadorMapamundi = new JugadorMapamundi(new Punto(1824, 1290));   
+                        this.jugadorMapamundi = new JugadorMapamundi(new Punto(824, 1290));   
                     }.bind(this), 300);
                     
                     controlesTeclado.arriba = null;
