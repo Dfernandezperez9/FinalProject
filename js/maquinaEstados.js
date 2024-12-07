@@ -45,70 +45,71 @@ const maquinaEstados = {
 
             case listadoEstados.NIVEL:
                 document.body.appendChild(carga);
-
-                maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);
-                
-                controlesTeclado.arriba = null;
-                controlesTeclado.abajo = null;
-                controlesTeclado.izquierda = null;
-                controlesTeclado.derecha = null;
-                
-                JugadorMapamundi.objetoRecogido1 = false;
-                JugadorMapamundi.objetoRecogido2 = false;
-                JugadorMapamundi.objetoRecogido3 = false;
-                JugadorMapamundi.objetoRecogido4 = false;
-                JugadorMapamundi.objetoRecogido5 = false;
-                JugadorMapamundi.objetoRecogido6 = false;
-                JugadorMapamundi.objetoRecogido7 = false;
-                JugadorMapamundi.objetoRecogido8 = false;
-                JugadorMapamundi.objetoRecogido9 = false;
-                JugadorMapamundi.objetoRecogido10 = false;
-        
-                JugadorMapamundi.easterRecogido1 = false;
-                JugadorMapamundi.easterRecogido2 = false;
-                JugadorMapamundi.easterRecogido3 = false;
-
-                JugadorMapamundi.textoDisparado1 = false;
-                JugadorMapamundi.textoDisparado2 = false;
-                JugadorMapamundi.textoDisparado3 = false;
-                JugadorMapamundi.textoDisparado4 = false;
-                JugadorMapamundi.textoDisparado5 = false;
-        
-                JugadorMapamundi.contadorObjetos = 0;
-                JugadorMapamundi.contadorEaster = 0;
-
-                JugadorMapamundi.todosEasterRecogidos = false;
-                JugadorMapamundi.todosObjetosRecogidos = false;
-
-                document.getElementById('pInfo').innerText = `Capta a los incautos de las afueras!`;
-
-                setTimeout(function () {
-                    document.getElementById('objeto1').style.display = 'initial';
-                    document.getElementById('objeto2').style.display = 'initial';
-                    document.getElementById('objeto3').style.display = 'initial';
-                    document.getElementById('objeto4').style.display = 'initial';
-                    document.getElementById('objeto5').style.display = 'initial';
-                    document.getElementById('objeto6').style.display = 'initial';
-                    document.getElementById('objeto7').style.display = 'initial';
-                    document.getElementById('objeto8').style.display = 'initial';
-                    document.getElementById('objeto9').style.display = 'initial';
-                    document.getElementById('objeto10').style.display = 'initial';
-
-                    document.getElementById('easter1').style.display = 'initial';
-                    document.getElementById('easter2').style.display = 'initial';
-                    document.getElementById('easter3').style.display = 'initial';
-                }, 100);
-
                 setTimeout(function() {
-
-                    controlesTeclado.arriba = "ArrowUp";
-                    controlesTeclado.abajo = "ArrowDown";
-                    controlesTeclado.izquierda = "ArrowLeft";
-                    controlesTeclado.derecha = "ArrowRight";
-
-                    document.body.removeChild(carga);
-
-                }, 3000);
+                    maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);
+                
+                    controlesTeclado.arriba = null;
+                    controlesTeclado.abajo = null;
+                    controlesTeclado.izquierda = null;
+                    controlesTeclado.derecha = null;
+                    
+                    JugadorMapamundi.objetoRecogido1 = false;
+                    JugadorMapamundi.objetoRecogido2 = false;
+                    JugadorMapamundi.objetoRecogido3 = false;
+                    JugadorMapamundi.objetoRecogido4 = false;
+                    JugadorMapamundi.objetoRecogido5 = false;
+                    JugadorMapamundi.objetoRecogido6 = false;
+                    JugadorMapamundi.objetoRecogido7 = false;
+                    JugadorMapamundi.objetoRecogido8 = false;
+                    JugadorMapamundi.objetoRecogido9 = false;
+                    JugadorMapamundi.objetoRecogido10 = false;
+            
+                    JugadorMapamundi.easterRecogido1 = false;
+                    JugadorMapamundi.easterRecogido2 = false;
+                    JugadorMapamundi.easterRecogido3 = false;
+    
+                    JugadorMapamundi.textoDisparado1 = false;
+                    JugadorMapamundi.textoDisparado2 = false;
+                    JugadorMapamundi.textoDisparado3 = false;
+                    JugadorMapamundi.textoDisparado4 = false;
+                    JugadorMapamundi.textoDisparado5 = false;
+            
+                    JugadorMapamundi.contadorObjetos = 0;
+                    JugadorMapamundi.contadorEaster = 0;
+    
+                    JugadorMapamundi.todosEasterRecogidos = false;
+                    JugadorMapamundi.todosObjetosRecogidos = false;
+    
+                    document.getElementById('pInfo').innerText = `Capta a los incautos de las afueras!`;
+    
+                    setTimeout(function () {
+                        document.getElementById('objeto1').style.display = 'initial';
+                        document.getElementById('objeto2').style.display = 'initial';
+                        document.getElementById('objeto3').style.display = 'initial';
+                        document.getElementById('objeto4').style.display = 'initial';
+                        document.getElementById('objeto5').style.display = 'initial';
+                        document.getElementById('objeto6').style.display = 'initial';
+                        document.getElementById('objeto7').style.display = 'initial';
+                        document.getElementById('objeto8').style.display = 'initial';
+                        document.getElementById('objeto9').style.display = 'initial';
+                        document.getElementById('objeto10').style.display = 'initial';
+    
+                        document.getElementById('easter1').style.display = 'initial';
+                        document.getElementById('easter2').style.display = 'initial';
+                        document.getElementById('easter3').style.display = 'initial';
+                    }, 100);
+    
+                    setTimeout(function() {
+    
+                        controlesTeclado.arriba = "ArrowUp";
+                        controlesTeclado.abajo = "ArrowDown";
+                        controlesTeclado.izquierda = "ArrowLeft";
+                        controlesTeclado.derecha = "ArrowRight";
+    
+                        document.body.removeChild(carga);
+    
+                    }, 3000);
+                }, 300);
                 break;
 
             case listadoEstados.FINAL:
