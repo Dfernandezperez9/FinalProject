@@ -56,33 +56,32 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     document.body.appendChild(carga);
                     setTimeout(function() {
                         this.jugadorMapamundi = new JugadorMapamundi(new Punto(818, 1290));
-                        controlesTeclado.arriba = null;
-                        controlesTeclado.abajo = null;
-                        controlesTeclado.izquierda = null;
-                        controlesTeclado.derecha = null;
-                        
-                        setTimeout(function() {
+                    }.bind(this), 300);
+                    
+                    controlesTeclado.arriba = null;
+                    controlesTeclado.abajo = null;
+                    controlesTeclado.izquierda = null;
+                    controlesTeclado.derecha = null;
+                    
+                    setTimeout(function() {
+
+                        controlesTeclado.arriba = "ArrowUp";
+                        controlesTeclado.abajo = "ArrowDown";
+                        controlesTeclado.izquierda = "ArrowLeft";
+                        controlesTeclado.derecha = "ArrowRight";
     
-                            controlesTeclado.arriba = "ArrowUp";
-                            controlesTeclado.abajo = "ArrowDown";
-                            controlesTeclado.izquierda = "ArrowLeft";
-                            controlesTeclado.derecha = "ArrowRight";
-        
-                            document.body.removeChild(carga);
-                            
-                        }, 3000);
-                    }, 500);
-                    
-
-                    
-
+                        document.body.removeChild(carga);
+                        
+                    }, 3000);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada dos") {
-                    this.jugadorMapamundi = new JugadorMapamundi(new Punto(864, 920));
-
                     document.body.appendChild(carga);
+                    setTimeout(function() {
+                        this.jugadorMapamundi = new JugadorMapamundi(new Punto(1824, 1290));   
+                    }.bind(this), 300);
+                    
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
                     controlesTeclado.izquierda = null;
@@ -102,9 +101,11 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada tres") {
-                    this.jugadorMapamundi = new JugadorMapamundi(new Punto(1824, 1720));
-
                     document.body.appendChild(carga);
+                    setTimeout(function() {
+                        this.jugadorMapamundi = new JugadorMapamundi(new Punto(1824, 1720));
+                    }.bind(this), 300);
+                    
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
                     controlesTeclado.izquierda = null;
@@ -124,9 +125,11 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada cuatro") {
-                    this.jugadorMapamundi = new JugadorMapamundi(new Punto(960, 1058));
-
                     document.body.appendChild(carga);
+                    setTimeout(function() {
+                        this.jugadorMapamundi = new JugadorMapamundi(new Punto(960, 1058));
+                    }.bind(this), 300);
+                    
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
                     controlesTeclado.izquierda = null;
@@ -151,9 +154,11 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada cinco") {
-                    this.jugadorMapamundi = new JugadorMapamundi(new Punto(1200, 1332));
-
                     document.body.appendChild(carga);
+                    setTimeout(function() {
+                        this.jugadorMapamundi = new JugadorMapamundi(new Punto(1200, 1332));    
+                    }.bind(this), 300);
+                    
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
                     controlesTeclado.izquierda = null;
@@ -173,9 +178,11 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada seis") {
-                    this.jugadorMapamundi = new JugadorMapamundi(new Punto(336, 994));
-
                     document.body.appendChild(carga);
+                    setTimeout(function() {
+                        this.jugadorMapamundi = new JugadorMapamundi(new Punto(336, 994));    
+                    }.bind(this), 300);
+                    
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
                     controlesTeclado.izquierda = null;
