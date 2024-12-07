@@ -149,7 +149,9 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Hacia Afueras") {
-                    maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion);
+                    setTimeout(function() {
+                        maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion); 
+                    },500);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
@@ -202,7 +204,9 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "De vuelta a casa") {
-                    maquinaEstados.cambiarEstado(listadoEstados.FINAL, objetoEntradaLocalizacion);
+                    setTimeout(function() {
+                        maquinaEstados.cambiarEstado(listadoEstados.FINAL, objetoEntradaLocalizacion);     
+                    }, 500);
                 }
             }
         }

@@ -52,9 +52,7 @@ const maquinaEstados = {
             case listadoEstados.NIVEL:
                 document.body.appendChild(carga);
 
-                setTimeout(function() {
-                    maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);     
-                }, 600);
+                maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);     
                 
                 controlesTeclado.arriba = null;
                 controlesTeclado.abajo = null;
@@ -129,12 +127,11 @@ const maquinaEstados = {
                     }
                 }
 
-                let intervaloId = setInterval(reducirVolumen, 500);
+                let intervaloId = setInterval(reducirVolumen, 150);
                 
-                setTimeout(function() {
-                    maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.FINAL, "mapas/Valdemoro.json?v=" + Date.now(), 480, 288);
-                    reducirVolumen();
-                }, 600);
+                maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.FINAL, "mapas/Valdemoro.json?v=" + Date.now(), 480, 288);
+                reducirVolumen();
+        
                 
                 JugadorMapamundi.objetoRecogido1 = false;
                 JugadorMapamundi.objetoRecogido2 = false;
