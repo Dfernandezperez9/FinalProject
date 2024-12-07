@@ -149,6 +149,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Hacia Afueras") {
+                    document.body.appendChild(carga);
                     setTimeout(function() {
                         maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion); 
                     },500);
@@ -204,6 +205,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "De vuelta a casa") {
+                    document.body.appendChild(carga);
                     setTimeout(function() {
                         maquinaEstados.cambiarEstado(listadoEstados.FINAL, objetoEntradaLocalizacion);     
                     }, 500);

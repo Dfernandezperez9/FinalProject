@@ -50,8 +50,6 @@ const maquinaEstados = {
                 break;
 
             case listadoEstados.NIVEL:
-                document.body.appendChild(carga);
-
                 maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);     
                 
                 controlesTeclado.arriba = null;
@@ -118,7 +116,6 @@ const maquinaEstados = {
                 break;
 
             case listadoEstados.FINAL:
-                document.body.appendChild(carga);
 
                 function reducirVolumen() {
                     audio.musica.volume -= 0.01;
