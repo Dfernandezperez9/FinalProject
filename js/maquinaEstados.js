@@ -5,6 +5,18 @@ const maquinaEstados = {
     },
 
     cambiarEstado: function (nuevoEstado, objetoEntradaLocalizacion) {
+        const carga = document.createElement("div");
+        carga.style.position = "fixed";
+        carga.style.zIndex = "9999";
+        carga.style.top = "0px";
+        carga.style.left = "0px";
+        carga.style.width = "100%";
+        carga.style.height = "100%";
+        carga.style.backgroundImage = "url('img/loading.png')";
+        carga.style.backgroundSize = "cover";
+        carga.style.backgroundPosition = "center";
+        carga.style.opacity = "1";
+        carga.style.pointerEvents = "auto";
 
         switch (nuevoEstado) {
 
