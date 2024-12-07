@@ -20,6 +20,19 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
    this.mapa.actualizar(registroTemporal, this.jugadorMapamundi.posicionEnMapaEnPixeles);
 
    let localizacionAtravesada = false;
+
+   let carga = document.createElement("div");
+        carga.style.position = "fixed";
+        carga.style.zIndex = "9999";
+        carga.style.top = "0px";
+        carga.style.left = "0px";
+        carga.style.width = "100%";
+        carga.style.height = "100%";
+        carga.style.backgroundImage = "url('img/loading.png')";
+        carga.style.backgroundSize = "cover";
+        carga.style.backgroundPosition = "center";
+        carga.style.opacity = "1";
+        carga.style.pointerEvents = "auto";
    
    
    for (let i = 0; i < this.mapa.rectangulosLocalizaciones.length; i++) {
@@ -41,21 +54,89 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada uno") {
                     this.jugadorMapamundi = new JugadorMapamundi(new Punto(818, 1290));
+
+                    document.body.appendChild(carga);
+                    controlesTeclado.arriba = null;
+                    controlesTeclado.abajo = null;
+                    controlesTeclado.izquierda = null;
+                    controlesTeclado.derecha = null;
+                    
+                    setTimeout(function() {
+
+                        controlesTeclado.arriba = "ArrowUp";
+                        controlesTeclado.abajo = "ArrowDown";
+                        controlesTeclado.izquierda = "ArrowLeft";
+                        controlesTeclado.derecha = "ArrowRight";
+    
+                        document.body.removeChild(carga);
+                        
+                    }, 3000);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada dos") {
                     this.jugadorMapamundi = new JugadorMapamundi(new Punto(864, 920));
+
+                    document.body.appendChild(carga);
+                    controlesTeclado.arriba = null;
+                    controlesTeclado.abajo = null;
+                    controlesTeclado.izquierda = null;
+                    controlesTeclado.derecha = null;
+                    
+                    setTimeout(function() {
+
+                        controlesTeclado.arriba = "ArrowUp";
+                        controlesTeclado.abajo = "ArrowDown";
+                        controlesTeclado.izquierda = "ArrowLeft";
+                        controlesTeclado.derecha = "ArrowRight";
+    
+                        document.body.removeChild(carga);
+                        
+                    }, 3000);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada tres") {
                     this.jugadorMapamundi = new JugadorMapamundi(new Punto(1824, 1720));
+
+                    document.body.appendChild(carga);
+                    controlesTeclado.arriba = null;
+                    controlesTeclado.abajo = null;
+                    controlesTeclado.izquierda = null;
+                    controlesTeclado.derecha = null;
+                    
+                    setTimeout(function() {
+
+                        controlesTeclado.arriba = "ArrowUp";
+                        controlesTeclado.abajo = "ArrowDown";
+                        controlesTeclado.izquierda = "ArrowLeft";
+                        controlesTeclado.derecha = "ArrowRight";
+    
+                        document.body.removeChild(carga);
+                        
+                    }, 3000);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada cuatro") {
                     this.jugadorMapamundi = new JugadorMapamundi(new Punto(960, 1058));
+
+                    document.body.appendChild(carga);
+                    controlesTeclado.arriba = null;
+                    controlesTeclado.abajo = null;
+                    controlesTeclado.izquierda = null;
+                    controlesTeclado.derecha = null;
+                    
+                    setTimeout(function() {
+
+                        controlesTeclado.arriba = "ArrowUp";
+                        controlesTeclado.abajo = "ArrowDown";
+                        controlesTeclado.izquierda = "ArrowLeft";
+                        controlesTeclado.derecha = "ArrowRight";
+    
+                        document.body.removeChild(carga);
+                        
+                    }, 3000);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
@@ -66,11 +147,45 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada cinco") {
                     this.jugadorMapamundi = new JugadorMapamundi(new Punto(1200, 1332));
+
+                    document.body.appendChild(carga);
+                    controlesTeclado.arriba = null;
+                    controlesTeclado.abajo = null;
+                    controlesTeclado.izquierda = null;
+                    controlesTeclado.derecha = null;
+                    
+                    setTimeout(function() {
+
+                        controlesTeclado.arriba = "ArrowUp";
+                        controlesTeclado.abajo = "ArrowDown";
+                        controlesTeclado.izquierda = "ArrowLeft";
+                        controlesTeclado.derecha = "ArrowRight";
+    
+                        document.body.removeChild(carga);
+                        
+                    }, 3000);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada seis") {
                     this.jugadorMapamundi = new JugadorMapamundi(new Punto(336, 994));
+
+                    document.body.appendChild(carga);
+                    controlesTeclado.arriba = null;
+                    controlesTeclado.abajo = null;
+                    controlesTeclado.izquierda = null;
+                    controlesTeclado.derecha = null;
+                    
+                    setTimeout(function() {
+
+                        controlesTeclado.arriba = "ArrowUp";
+                        controlesTeclado.abajo = "ArrowDown";
+                        controlesTeclado.izquierda = "ArrowLeft";
+                        controlesTeclado.derecha = "ArrowRight";
+    
+                        document.body.removeChild(carga);
+                        
+                    }, 3000);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {

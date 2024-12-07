@@ -25,25 +25,28 @@ function EstadoPantallaTitulo () {
     document.getElementsByTagName("body")[0].onclick = function () {
         document.getElementById("pantalla-titulo").style.display = "none";
 
-        let popup = document.createElement("div");
-        popup.innerHTML = "Utiliza las flechas del teclado para moverte por las afueras de madrid y capta a todos los incautos.";
-        popup.style.zIndex = "20";
-        popup.style.position = "fixed";
-        popup.style.top = "60%";
-        popup.style.left = "50%";
-        popup.style.transform = "translate(-50%, -50%)";
-        popup.style.backgroundColor = "black";
-        popup.style.color = "white";
-        popup.style.fontSize = "20px";
-        popup.style.padding = "50px";
-        popup.style.border = "1px solid white";
-        popup.style.borderRadius = "10px";
-        popup.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.5)";
+        setTimeout(function () {
+            let popup = document.createElement("div");
+            popup.innerHTML = "Utiliza las flechas del teclado para moverte por las afueras de madrid y capta a todos los incautos.";
+            popup.style.zIndex = "20";
+            popup.style.position = "fixed";
+            popup.style.top = "60%";
+            popup.style.left = "50%";
+            popup.style.transform = "translate(-50%, -50%)";
+            popup.style.backgroundColor = "black";
+            popup.style.color = "white";
+            popup.style.fontSize = "20px";
+            popup.style.padding = "50px";
+            popup.style.border = "1px solid white";
+            popup.style.borderRadius = "10px";
+            popup.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.5)";
+    
+            document.body.appendChild(popup);
+            setTimeout(function() {
+                popup.remove();
+            }, 5000);    
+        }, 3600);
 
-        document.body.appendChild(popup);
-        setTimeout(function() {
-            popup.remove();
-        }, 5000);
 
         document.getElementsByTagName("body")[0].onclick = "";
         document.getElementById("info").style.display = "block";
