@@ -17,6 +17,7 @@ const inicio = {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("info").style.display = "none";
     inicio.iniciarJuego();
 
 }, false);

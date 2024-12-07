@@ -25,6 +25,7 @@ const maquinaEstados = {
                 document.body.appendChild(carga);
 
                 setTimeout(function() {
+                    document.getElementById("info").style.display = "initial";
                     maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.MAPAMUNDI, "mapas/Valdemoro.json?v=" + Date.now(), 624, 48);    
                 }, 300);
                 
@@ -85,7 +86,7 @@ const maquinaEstados = {
                 JugadorMapamundi.todosObjetosRecogidos = false;
 
                 document.getElementById('pInfo').innerText = `Capta a los incautos de las afueras!`;
-
+                
                 setTimeout(function () {
                     document.getElementById('objeto1').style.display = 'initial';
                     document.getElementById('objeto2').style.display = 'initial';
