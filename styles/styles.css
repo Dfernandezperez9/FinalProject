@@ -1,4 +1,4 @@
-#info {
+.info {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -15,4 +15,8 @@
     font-weight: 500;
     color: black;
     text-align: center;
+}
+
+.info1 {
+    display: none;
 }

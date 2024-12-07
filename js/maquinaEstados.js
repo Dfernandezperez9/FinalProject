@@ -29,7 +29,7 @@ const maquinaEstados = {
                 }, 300);
 
                 setTimeout(function() {
-                    document.getElementById("info").style.display = "initial";
+                    document.getElementById("info").classList.remove("info1");
                 }, 1000);
                 
                 controlesTeclado.arriba = null;
