@@ -156,7 +156,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
     }
 
 
-    let traduccionTemporalColision1 = new Rectangulo(mapa.objetoColectable1[0].x + mapa.posicion.x, mapa.objetoColectable1[0].y + mapa.posicion.y, mapa.objetoColectable1[0].ancho, mapa.objetoColectable1[0].alto);
+    const traduccionTemporalColision1 = new Rectangulo(mapa.objetoColectable1[0].x + mapa.posicion.x, mapa.objetoColectable1[0].y + mapa.posicion.y, mapa.objetoColectable1[0].ancho, mapa.objetoColectable1[0].alto);
     if (traduccionTemporalColision1.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido1) {
             let popup = document.createElement("div");
@@ -190,7 +190,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision2 = new Rectangulo(mapa.objetoColectable2[0].x + mapa.posicion.x, mapa.objetoColectable2[0].y + mapa.posicion.y, mapa.objetoColectable2[0].ancho, mapa.objetoColectable2[0].alto);
+    const traduccionTemporalColision2 = new Rectangulo(mapa.objetoColectable2[0].x + mapa.posicion.x, mapa.objetoColectable2[0].y + mapa.posicion.y, mapa.objetoColectable2[0].ancho, mapa.objetoColectable2[0].alto);
     if (traduccionTemporalColision2.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido2) {
             let popup = document.createElement("div");
@@ -224,7 +224,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision3 = new Rectangulo(mapa.objetoColectable3[0].x + mapa.posicion.x, mapa.objetoColectable3[0].y + mapa.posicion.y, mapa.objetoColectable3[0].ancho, mapa.objetoColectable3[0].alto);
+    const traduccionTemporalColision3 = new Rectangulo(mapa.objetoColectable3[0].x + mapa.posicion.x, mapa.objetoColectable3[0].y + mapa.posicion.y, mapa.objetoColectable3[0].ancho, mapa.objetoColectable3[0].alto);
     if (traduccionTemporalColision3.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido3) {
             let popup = document.createElement("div");
@@ -258,7 +258,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision4 = new Rectangulo(mapa.objetoColectable4[0].x + mapa.posicion.x, mapa.objetoColectable4[0].y + mapa.posicion.y, mapa.objetoColectable4[0].ancho, mapa.objetoColectable4[0].alto);
+    const traduccionTemporalColision4 = new Rectangulo(mapa.objetoColectable4[0].x + mapa.posicion.x, mapa.objetoColectable4[0].y + mapa.posicion.y, mapa.objetoColectable4[0].ancho, mapa.objetoColectable4[0].alto);
     if (traduccionTemporalColision4.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido4) {
             let popup = document.createElement("div");
@@ -292,7 +292,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision5 = new Rectangulo(mapa.objetoColectable5[0].x + mapa.posicion.x, mapa.objetoColectable5[0].y + mapa.posicion.y, mapa.objetoColectable5[0].ancho, mapa.objetoColectable5[0].alto);
+    const traduccionTemporalColision5 = new Rectangulo(mapa.objetoColectable5[0].x + mapa.posicion.x, mapa.objetoColectable5[0].y + mapa.posicion.y, mapa.objetoColectable5[0].ancho, mapa.objetoColectable5[0].alto);
     if (traduccionTemporalColision5.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido5) {
             let popup = document.createElement("div");
@@ -326,7 +326,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision6 = new Rectangulo(mapa.objetoColectable6[0].x + mapa.posicion.x, mapa.objetoColectable6[0].y + mapa.posicion.y, mapa.objetoColectable6[0].ancho, mapa.objetoColectable6[0].alto);
+    const traduccionTemporalColision6 = new Rectangulo(mapa.objetoColectable6[0].x + mapa.posicion.x, mapa.objetoColectable6[0].y + mapa.posicion.y, mapa.objetoColectable6[0].ancho, mapa.objetoColectable6[0].alto);
     if (traduccionTemporalColision6.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido6) {
             let popup = document.createElement("div");
@@ -360,7 +360,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision7 = new Rectangulo(mapa.objetoColectable7[0].x + mapa.posicion.x, mapa.objetoColectable7[0].y + mapa.posicion.y, mapa.objetoColectable7[0].ancho, mapa.objetoColectable7[0].alto);
+    const traduccionTemporalColision7 = new Rectangulo(mapa.objetoColectable7[0].x + mapa.posicion.x, mapa.objetoColectable7[0].y + mapa.posicion.y, mapa.objetoColectable7[0].ancho, mapa.objetoColectable7[0].alto);
     if (traduccionTemporalColision7.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido7) {
             let popup = document.createElement("div");
@@ -394,7 +394,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision8 = new Rectangulo(mapa.objetoColectable8[0].x + mapa.posicion.x, mapa.objetoColectable8[0].y + mapa.posicion.y, mapa.objetoColectable8[0].ancho, mapa.objetoColectable8[0].alto);
+    const traduccionTemporalColision8 = new Rectangulo(mapa.objetoColectable8[0].x + mapa.posicion.x, mapa.objetoColectable8[0].y + mapa.posicion.y, mapa.objetoColectable8[0].ancho, mapa.objetoColectable8[0].alto);
     if (traduccionTemporalColision8.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido8) {
             let popup = document.createElement("div");
@@ -428,7 +428,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision9 = new Rectangulo(mapa.objetoColectable9[0].x + mapa.posicion.x, mapa.objetoColectable9[0].y + mapa.posicion.y, mapa.objetoColectable9[0].ancho, mapa.objetoColectable9[0].alto);
+    const traduccionTemporalColision9 = new Rectangulo(mapa.objetoColectable9[0].x + mapa.posicion.x, mapa.objetoColectable9[0].y + mapa.posicion.y, mapa.objetoColectable9[0].ancho, mapa.objetoColectable9[0].alto);
     if (traduccionTemporalColision9.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido9) {
             let popup = document.createElement("div");
@@ -462,7 +462,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision10 = new Rectangulo(mapa.objetoColectable10[0].x + mapa.posicion.x, mapa.objetoColectable10[0].y + mapa.posicion.y, mapa.objetoColectable10[0].ancho, mapa.objetoColectable10[0].alto);
+    const traduccionTemporalColision10 = new Rectangulo(mapa.objetoColectable10[0].x + mapa.posicion.x, mapa.objetoColectable10[0].y + mapa.posicion.y, mapa.objetoColectable10[0].ancho, mapa.objetoColectable10[0].alto);
     if (traduccionTemporalColision10.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.objetoRecogido10) {
             let popup = document.createElement("div");
@@ -498,7 +498,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
 
 
 
-    let traduccionTemporalColision11 = new Rectangulo(mapa.easterColectable1[0].x + mapa.posicion.x, mapa.easterColectable1[0].y + mapa.posicion.y, mapa.easterColectable1[0].ancho, mapa.easterColectable1[0].alto);
+    const traduccionTemporalColision11 = new Rectangulo(mapa.easterColectable1[0].x + mapa.posicion.x, mapa.easterColectable1[0].y + mapa.posicion.y, mapa.easterColectable1[0].ancho, mapa.easterColectable1[0].alto);
     if (traduccionTemporalColision11.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.easterRecogido1) {
             let popup = document.createElement("div");
@@ -526,7 +526,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
 
-    let traduccionTemporalColision12 = new Rectangulo(mapa.easterColectable2[0].x + mapa.posicion.x, mapa.easterColectable2[0].y + mapa.posicion.y, mapa.easterColectable2[0].ancho, mapa.easterColectable2[0].alto);
+    const traduccionTemporalColision12 = new Rectangulo(mapa.easterColectable2[0].x + mapa.posicion.x, mapa.easterColectable2[0].y + mapa.posicion.y, mapa.easterColectable2[0].ancho, mapa.easterColectable2[0].alto);
     if (traduccionTemporalColision12.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.easterRecogido2) {
             let popup = document.createElement("div");
@@ -554,7 +554,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
 
-    let traduccionTemporalColision13 = new Rectangulo(mapa.easterColectable3[0].x + mapa.posicion.x, mapa.easterColectable3[0].y + mapa.posicion.y, mapa.easterColectable3[0].ancho, mapa.easterColectable3[0].alto);
+    const traduccionTemporalColision13 = new Rectangulo(mapa.easterColectable3[0].x + mapa.posicion.x, mapa.easterColectable3[0].y + mapa.posicion.y, mapa.easterColectable3[0].ancho, mapa.easterColectable3[0].alto);
     if (traduccionTemporalColision13.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.easterRecogido3) {
             let popup = document.createElement("div");
@@ -583,7 +583,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
     }
 
 
-    let traduccionTemporalColision14 = new Rectangulo(mapa.objetoTexto1[0].x + mapa.posicion.x, mapa.objetoTexto1[0].y + mapa.posicion.y, mapa.objetoTexto1[0].ancho, mapa.objetoTexto1[0].alto);
+    const traduccionTemporalColision14 = new Rectangulo(mapa.objetoTexto1[0].x + mapa.posicion.x, mapa.objetoTexto1[0].y + mapa.posicion.y, mapa.objetoTexto1[0].ancho, mapa.objetoTexto1[0].alto);
     if (traduccionTemporalColision14.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.textoDisparado1) {
             let popup = document.createElement("div");
@@ -614,7 +614,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
     
-    let traduccionTemporalColision15 = new Rectangulo(mapa.objetoTexto2[0].x + mapa.posicion.x, mapa.objetoTexto2[0].y + mapa.posicion.y, mapa.objetoTexto2[0].ancho, mapa.objetoTexto2[0].alto);
+    const traduccionTemporalColision15 = new Rectangulo(mapa.objetoTexto2[0].x + mapa.posicion.x, mapa.objetoTexto2[0].y + mapa.posicion.y, mapa.objetoTexto2[0].ancho, mapa.objetoTexto2[0].alto);
     if (traduccionTemporalColision15.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.textoDisparado2) {
             let popup = document.createElement("div");
@@ -645,7 +645,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
 
-    let traduccionTemporalColision16 = new Rectangulo(mapa.objetoTexto3[0].x + mapa.posicion.x, mapa.objetoTexto3[0].y + mapa.posicion.y, mapa.objetoTexto3[0].ancho, mapa.objetoTexto3[0].alto);
+    const traduccionTemporalColision16 = new Rectangulo(mapa.objetoTexto3[0].x + mapa.posicion.x, mapa.objetoTexto3[0].y + mapa.posicion.y, mapa.objetoTexto3[0].ancho, mapa.objetoTexto3[0].alto);
     if (traduccionTemporalColision16.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.textoDisparado3) {
             let popup = document.createElement("div");
@@ -676,7 +676,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
 
-    let traduccionTemporalColision17 = new Rectangulo(mapa.objetoTexto4[0].x + mapa.posicion.x, mapa.objetoTexto4[0].y + mapa.posicion.y, mapa.objetoTexto4[0].ancho, mapa.objetoTexto4[0].alto);
+    const traduccionTemporalColision17 = new Rectangulo(mapa.objetoTexto4[0].x + mapa.posicion.x, mapa.objetoTexto4[0].y + mapa.posicion.y, mapa.objetoTexto4[0].ancho, mapa.objetoTexto4[0].alto);
     if (traduccionTemporalColision17.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.textoDisparado4) {
             let popup = document.createElement("div");
@@ -707,7 +707,7 @@ JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
         }
     }
 
-    let traduccionTemporalColision18 = new Rectangulo(mapa.objetoTexto5[0].x + mapa.posicion.x, mapa.objetoTexto5[0].y + mapa.posicion.y, mapa.objetoTexto5[0].ancho, mapa.objetoTexto5[0].alto);
+    const traduccionTemporalColision18 = new Rectangulo(mapa.objetoTexto5[0].x + mapa.posicion.x, mapa.objetoTexto5[0].y + mapa.posicion.y, mapa.objetoTexto5[0].ancho, mapa.objetoTexto5[0].alto);
     if (traduccionTemporalColision18.cruza(this.rectanguloGeneral)) {
         if (!JugadorMapamundi.textoDisparado5) {
             let popup = document.createElement("div");

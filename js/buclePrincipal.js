@@ -1,4 +1,4 @@
-let buclePrincipal = {
+const buclePrincipal = {
     idEjecucion: null,
     ultimoRegistro: 0,
     aps: 0,
@@ -19,14 +19,10 @@ let buclePrincipal = {
 
     },
     actualizar: function (registroTemporal) {
-        //mando.actualizar();
-        //controles.actualizar();
         maquinaEstados.actualizar(registroTemporal);
-        //teclado.reiniciar();
-        //controles.reiniciar();
         buclePrincipal.aps++;
     },
-    dibujar: function (registroTemporal) {
+    dibujar: function () {
         maquinaEstados.dibujar();
         buclePrincipal.fps++;
     }

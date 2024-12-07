@@ -1,3 +1,3 @@
-let debug = {
+const debug = {
     debugging: false,
 }

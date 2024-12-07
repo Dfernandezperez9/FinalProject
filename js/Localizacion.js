@@ -1,5 +1,4 @@
-function Localizacion (rectangulo, /*id,*/ nombre) {
+function Localizacion (rectangulo, nombre) {
     this.rectangulo = rectangulo;
-    //this.id = id;
     this.nombre = nombre;
 }

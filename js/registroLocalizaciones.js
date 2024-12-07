@@ -1,6 +1,6 @@
-let registroLocalizaciones = {
+const registroLocalizaciones = {
     obtenerLocalizacion: function (nombreLocalizacion) {
-        let localizaciones = new Array();
+        const localizaciones = new Array();
         localizaciones.push(new RegistroLocalizacionEntrada("Hacia Afueras", "mapas/Afueras.json?v=" + Date.now(), "img/AssetsGlobal.png", 48, 225));
         localizaciones.push(new RegistroLocalizacionEntrada("De vuelta a casa", "mapas/Afueras.json?v=" + Date.now(), "img/AssetsGlobal.png", 480, 288));
         localizaciones.push(new RegistroLocalizacionEntrada("Caseta abandonada uno", "mapas/Valdemoro.json", "img/AssetsGlobal.png", "img/AssetsGlobal.png", 818, 1290)); //850, 1290

@@ -1,10 +1,10 @@
-let dimensiones = {
+const dimensiones = {
     ancho: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
     alto: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
     ladoTiles: 100,
     escala: 1,
     iniciar: function () {
-        window.addEventListener("resize", function (evento) {
+        window.addEventListener("resize", function () {
             dimensiones.ancho = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
             dimensiones.alto = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         });

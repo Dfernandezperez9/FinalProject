@@ -65,16 +65,16 @@ Mapa.prototype.iniciarCapas = function (datosCapas) {
                     }
                 }
                 if (datosCapas[i].name == "ObjetoColectables") {
-                    let objeto1 = new Rectangulo(datosCapas[i].objects[0].x, datosCapas[i].objects[0].y, datosCapas[i].objects[0].width, datosCapas[i].objects[0].height, "colectable");
-                    let objeto2 = new Rectangulo(datosCapas[i].objects[1].x, datosCapas[i].objects[1].y, datosCapas[i].objects[1].width, datosCapas[i].objects[1].height, "colectable");
-                    let objeto3 = new Rectangulo(datosCapas[i].objects[2].x, datosCapas[i].objects[2].y, datosCapas[i].objects[2].width, datosCapas[i].objects[2].height, "colectable");
-                    let objeto4 = new Rectangulo(datosCapas[i].objects[3].x, datosCapas[i].objects[3].y, datosCapas[i].objects[3].width, datosCapas[i].objects[3].height, "colectable");
-                    let objeto5 = new Rectangulo(datosCapas[i].objects[4].x, datosCapas[i].objects[4].y, datosCapas[i].objects[4].width, datosCapas[i].objects[4].height, "colectable");
-                    let objeto6 = new Rectangulo(datosCapas[i].objects[5].x, datosCapas[i].objects[5].y, datosCapas[i].objects[5].width, datosCapas[i].objects[5].height, "colectable");
-                    let objeto7 = new Rectangulo(datosCapas[i].objects[6].x, datosCapas[i].objects[6].y, datosCapas[i].objects[6].width, datosCapas[i].objects[6].height, "colectable");
-                    let objeto8 = new Rectangulo(datosCapas[i].objects[7].x, datosCapas[i].objects[7].y, datosCapas[i].objects[7].width, datosCapas[i].objects[7].height, "colectable");
-                    let objeto9 = new Rectangulo(datosCapas[i].objects[8].x, datosCapas[i].objects[8].y, datosCapas[i].objects[8].width, datosCapas[i].objects[8].height, "colectable");
-                    let objeto10 = new Rectangulo(datosCapas[i].objects[9].x, datosCapas[i].objects[9].y, datosCapas[i].objects[9].width, datosCapas[i].objects[9].height, "colectable");
+                    const objeto1 = new Rectangulo(datosCapas[i].objects[0].x, datosCapas[i].objects[0].y, datosCapas[i].objects[0].width, datosCapas[i].objects[0].height, "colectable");
+                    const objeto2 = new Rectangulo(datosCapas[i].objects[1].x, datosCapas[i].objects[1].y, datosCapas[i].objects[1].width, datosCapas[i].objects[1].height, "colectable");
+                    const objeto3 = new Rectangulo(datosCapas[i].objects[2].x, datosCapas[i].objects[2].y, datosCapas[i].objects[2].width, datosCapas[i].objects[2].height, "colectable");
+                    const objeto4 = new Rectangulo(datosCapas[i].objects[3].x, datosCapas[i].objects[3].y, datosCapas[i].objects[3].width, datosCapas[i].objects[3].height, "colectable");
+                    const objeto5 = new Rectangulo(datosCapas[i].objects[4].x, datosCapas[i].objects[4].y, datosCapas[i].objects[4].width, datosCapas[i].objects[4].height, "colectable");
+                    const objeto6 = new Rectangulo(datosCapas[i].objects[5].x, datosCapas[i].objects[5].y, datosCapas[i].objects[5].width, datosCapas[i].objects[5].height, "colectable");
+                    const objeto7 = new Rectangulo(datosCapas[i].objects[6].x, datosCapas[i].objects[6].y, datosCapas[i].objects[6].width, datosCapas[i].objects[6].height, "colectable");
+                    const objeto8 = new Rectangulo(datosCapas[i].objects[7].x, datosCapas[i].objects[7].y, datosCapas[i].objects[7].width, datosCapas[i].objects[7].height, "colectable");
+                    const objeto9 = new Rectangulo(datosCapas[i].objects[8].x, datosCapas[i].objects[8].y, datosCapas[i].objects[8].width, datosCapas[i].objects[8].height, "colectable");
+                    const objeto10 = new Rectangulo(datosCapas[i].objects[9].x, datosCapas[i].objects[9].y, datosCapas[i].objects[9].width, datosCapas[i].objects[9].height, "colectable");
                     
                     this.objetoColectable1.push(objeto1);
                     this.objetoColectable2.push(objeto2);
@@ -88,20 +88,20 @@ Mapa.prototype.iniciarCapas = function (datosCapas) {
                     this.objetoColectable10.push(objeto10);
                 }
                 if (datosCapas[i].name == "ObjetoEaster") {
-                    let easter1 = new Rectangulo(datosCapas[i].objects[0].x, datosCapas[i].objects[0].y, datosCapas[i].objects[0].width, datosCapas[i].objects[0].height, "easter");
-                    let easter2 = new Rectangulo(datosCapas[i].objects[1].x, datosCapas[i].objects[1].y, datosCapas[i].objects[1].width, datosCapas[i].objects[1].height, "easter");
-                    let easter3 = new Rectangulo(datosCapas[i].objects[2].x, datosCapas[i].objects[2].y, datosCapas[i].objects[2].width, datosCapas[i].objects[2].height, "easter");
+                    const easter1 = new Rectangulo(datosCapas[i].objects[0].x, datosCapas[i].objects[0].y, datosCapas[i].objects[0].width, datosCapas[i].objects[0].height, "easter");
+                    const easter2 = new Rectangulo(datosCapas[i].objects[1].x, datosCapas[i].objects[1].y, datosCapas[i].objects[1].width, datosCapas[i].objects[1].height, "easter");
+                    const easter3 = new Rectangulo(datosCapas[i].objects[2].x, datosCapas[i].objects[2].y, datosCapas[i].objects[2].width, datosCapas[i].objects[2].height, "easter");
 
                     this.easterColectable1.push(easter1);
                     this.easterColectable2.push(easter2);
                     this.easterColectable3.push(easter3);
                 }
                 if (datosCapas[i].name == "ObjetoTexto") {
-                    let texto1 = new Rectangulo(datosCapas[i].objects[0].x, datosCapas[i].objects[0].y, datosCapas[i].objects[0].width, datosCapas[i].objects[0].height, "texto");
-                    let texto2 = new Rectangulo(datosCapas[i].objects[1].x, datosCapas[i].objects[1].y, datosCapas[i].objects[1].width, datosCapas[i].objects[1].height, "texto");
-                    let texto3 = new Rectangulo(datosCapas[i].objects[2].x, datosCapas[i].objects[2].y, datosCapas[i].objects[2].width, datosCapas[i].objects[2].height, "texto");
-                    let texto4 = new Rectangulo(datosCapas[i].objects[3].x, datosCapas[i].objects[3].y, datosCapas[i].objects[3].width, datosCapas[i].objects[3].height, "texto");
-                    let texto5 = new Rectangulo(datosCapas[i].objects[4].x, datosCapas[i].objects[4].y, datosCapas[i].objects[4].width, datosCapas[i].objects[4].height, "texto");
+                    const texto1 = new Rectangulo(datosCapas[i].objects[0].x, datosCapas[i].objects[0].y, datosCapas[i].objects[0].width, datosCapas[i].objects[0].height, "texto");
+                    const texto2 = new Rectangulo(datosCapas[i].objects[1].x, datosCapas[i].objects[1].y, datosCapas[i].objects[1].width, datosCapas[i].objects[1].height, "texto");
+                    const texto3 = new Rectangulo(datosCapas[i].objects[2].x, datosCapas[i].objects[2].y, datosCapas[i].objects[2].width, datosCapas[i].objects[2].height, "texto");
+                    const texto4 = new Rectangulo(datosCapas[i].objects[3].x, datosCapas[i].objects[3].y, datosCapas[i].objects[3].width, datosCapas[i].objects[3].height, "texto");
+                    const texto5 = new Rectangulo(datosCapas[i].objects[4].x, datosCapas[i].objects[4].y, datosCapas[i].objects[4].width, datosCapas[i].objects[4].height, "texto");
 
                     this.objetoTexto1.push(texto1);
                     this.objetoTexto2.push(texto2);

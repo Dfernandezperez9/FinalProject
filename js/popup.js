@@ -1,4 +1,4 @@
-let popup = {
+const popup = {
     visible: false,
     mostrar: function (x, y, ancho, texto) {
         if (popup.visible) {

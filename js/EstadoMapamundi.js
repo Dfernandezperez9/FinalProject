@@ -7,7 +7,7 @@ function EstadoMapamundi (idEstado, rutaMapa, xInicial, yInicial) {
     ajax.cargarArchivo(rutaMapa, function (objetoJSON) {
         that.mapa = new Mapa(objetoJSON, idEstado);
         that.mapaListo = true;
-        that.jugadorMapamundi = new JugadorMapamundi(new Punto(xInicial, yInicial), idEstado); // 624, 48
+        that.jugadorMapamundi = new JugadorMapamundi(new Punto(xInicial, yInicial), idEstado);
     });
 }
 
@@ -21,7 +21,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
 
    let localizacionAtravesada = false;
 
-   let carga = document.createElement("div");
+   const carga = document.createElement("div");
         carga.style.position = "fixed";
         carga.style.zIndex = "9999";
         carga.style.top = "0px";

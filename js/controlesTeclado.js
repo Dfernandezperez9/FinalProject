@@ -1,4 +1,4 @@
-let controlesTeclado = {
+const controlesTeclado = {
     arriba: "ArrowUp",
     abajo: "ArrowDown",
     izquierda: "ArrowLeft",

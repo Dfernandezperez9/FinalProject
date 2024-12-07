@@ -1,9 +1,8 @@
-let inicio = {
+const inicio = {
     iniciadores: [
         dimensiones.iniciar(),
         maquinaEstados.iniciar(),
         teclado.iniciar(),
-        //mando.iniciar(),
         buclePrincipal.iterar()
     ],
 

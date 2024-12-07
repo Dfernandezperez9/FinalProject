@@ -1,4 +1,4 @@
-let ajax = {
+const ajax = {
     cargarArchivo: function (ruta, manipularDatos) {
         let peticion = new XMLHttpRequest();
 

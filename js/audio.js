@@ -1,4 +1,4 @@
-let audio = {
+const audio = {
     musica: null,
     pistas: [
       "audio/cancion.mp3",

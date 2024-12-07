@@ -1,4 +1,4 @@
-let mando = {
+const mando = {
     objeto: null,
     eventosDisponibles: 'ongamepadconnected' in window,
     conectado: false,
@@ -56,3 +56,5 @@ let mando = {
             mando.objeto.index, mando.objeto.id, mando.objeto.buttons.length, mando.objeto.axes.length);
     }
 };
+
+// Funcion no implementada en el producto final.

@@ -1,4 +1,4 @@
-let maquinaEstados = {
+const maquinaEstados = {
     estadoActual: null,
     iniciar: function () {
         maquinaEstados.cambiarEstado(listadoEstados.PANTALLA_TITULO);
@@ -6,7 +6,7 @@ let maquinaEstados = {
 
     cambiarEstado: function (nuevoEstado, objetoEntradaLocalizacion) {
 
-        let carga = document.createElement("div");
+        const carga = document.createElement("div");
         carga.style.position = "fixed";
         carga.style.zIndex = "9999";
         carga.style.top = "0px";

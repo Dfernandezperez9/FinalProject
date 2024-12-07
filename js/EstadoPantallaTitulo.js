@@ -55,7 +55,7 @@ function EstadoPantallaTitulo () {
     }
 }
 
-EstadoPantallaTitulo.prototype.actualizar = function (registroTemporal) {
+EstadoPantallaTitulo.prototype.actualizar = function () {
     if (this.framesAnimacion < 30) {
         this.movimientoY++;
     }

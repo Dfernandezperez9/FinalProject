@@ -1,4 +1,4 @@
-let teclado = {
+const teclado = {
     teclas: new Array(),
     iniciar: function () {
         document.onkeydown = teclado.guardarTecla;
