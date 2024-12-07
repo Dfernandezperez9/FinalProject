@@ -109,7 +109,7 @@ const maquinaEstados = {
                     }
                 }
 
-                let intervaloId = setInterval(reducirVolumen, 150);
+                let intervaloId = setInterval(reducirVolumen, 500);
                 maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.FINAL, "mapas/Valdemoro.json?v=" + Date.now(), 480, 288);
                 reducirVolumen();
         
