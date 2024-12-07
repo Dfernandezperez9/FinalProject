@@ -53,24 +53,29 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Caseta abandonada uno") {
-                    this.jugadorMapamundi = new JugadorMapamundi(new Punto(818, 1290));
-
                     document.body.appendChild(carga);
-                    controlesTeclado.arriba = null;
-                    controlesTeclado.abajo = null;
-                    controlesTeclado.izquierda = null;
-                    controlesTeclado.derecha = null;
-                    
                     setTimeout(function() {
-
-                        controlesTeclado.arriba = "ArrowUp";
-                        controlesTeclado.abajo = "ArrowDown";
-                        controlesTeclado.izquierda = "ArrowLeft";
-                        controlesTeclado.derecha = "ArrowRight";
-    
-                        document.body.removeChild(carga);
+                        this.jugadorMapamundi = new JugadorMapamundi(new Punto(818, 1290));
+                        controlesTeclado.arriba = null;
+                        controlesTeclado.abajo = null;
+                        controlesTeclado.izquierda = null;
+                        controlesTeclado.derecha = null;
                         
-                    }, 3000);
+                        setTimeout(function() {
+    
+                            controlesTeclado.arriba = "ArrowUp";
+                            controlesTeclado.abajo = "ArrowDown";
+                            controlesTeclado.izquierda = "ArrowLeft";
+                            controlesTeclado.derecha = "ArrowRight";
+        
+                            document.body.removeChild(carga);
+                            
+                        }, 3000);
+                    }, 500);
+                    
+
+                    
+
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
