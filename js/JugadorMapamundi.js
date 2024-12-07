@@ -8,7 +8,7 @@ function JugadorMapamundi(posicionInicialEnPixeles) {
     this.origenXSprite = this.ancho * 15;
     this.origenYSprite = this.alto * this.personaje;
 
-    this.velocidadMovimiento = 2;
+    this.velocidadMovimiento = 6;
 
     this.velocidadX = 0;
     this.velocidadY = 0;

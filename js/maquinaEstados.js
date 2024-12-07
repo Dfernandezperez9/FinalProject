@@ -122,15 +122,18 @@ const maquinaEstados = {
             case listadoEstados.FINAL:
                 document.body.appendChild(carga);
 
-                let intervaloId = setInterval(function () {
+                function reducirVolumen() {
                     audio.musica.volume -= 0.01;
                     if (audio.musica.volume <= 0.03) {
                         audio.musica.volume = 0;
                     }
-                }, 150);
+                }
+
+                let intervaloId = setInterval(reducirVolumen, 500);
                 
                 setTimeout(function() {
                     maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.FINAL, "mapas/Valdemoro.json?v=" + Date.now(), 480, 288);
+                    reducirVolumen();
                 }, 300);
                 
                 JugadorMapamundi.objetoRecogido1 = false;
