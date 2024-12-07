@@ -56,7 +56,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     document.body.appendChild(carga);
                     setTimeout(function() {
                         this.jugadorMapamundi = new JugadorMapamundi(new Punto(818, 1290));
-                    }.bind(this), 300);
+                    }.bind(this), 500);
                     
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
@@ -80,7 +80,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     document.body.appendChild(carga);
                     setTimeout(function() {
                         this.jugadorMapamundi = new JugadorMapamundi(new Punto(864, 920));   
-                    }.bind(this), 300);
+                    }.bind(this), 500);
                     
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
@@ -104,7 +104,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     document.body.appendChild(carga);
                     setTimeout(function() {
                         this.jugadorMapamundi = new JugadorMapamundi(new Punto(1824, 1720));
-                    }.bind(this), 300);
+                    }.bind(this), 500);
                     
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
@@ -128,7 +128,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     document.body.appendChild(carga);
                     setTimeout(function() {
                         this.jugadorMapamundi = new JugadorMapamundi(new Punto(960, 1058));
-                    }.bind(this), 300);
+                    }.bind(this), 500);
                     
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
@@ -164,7 +164,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     document.body.appendChild(carga);
                     setTimeout(function() {
                         this.jugadorMapamundi = new JugadorMapamundi(new Punto(1200, 1332));    
-                    }.bind(this), 300);
+                    }.bind(this), 500);
                     
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
@@ -188,7 +188,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     document.body.appendChild(carga);
                     setTimeout(function() {
                         this.jugadorMapamundi = new JugadorMapamundi(new Punto(336, 994));    
-                    }.bind(this), 300);
+                    }.bind(this), 500);
                     
                     controlesTeclado.arriba = null;
                     controlesTeclado.abajo = null;
