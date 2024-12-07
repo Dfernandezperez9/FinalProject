@@ -54,7 +54,7 @@ const maquinaEstados = {
 
                 setTimeout(function() {
                     maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);     
-                }, 300);
+                }, 600);
                 
                 controlesTeclado.arriba = null;
                 controlesTeclado.abajo = null;
@@ -134,7 +134,7 @@ const maquinaEstados = {
                 setTimeout(function() {
                     maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.FINAL, "mapas/Valdemoro.json?v=" + Date.now(), 480, 288);
                     reducirVolumen();
-                }, 300);
+                }, 600);
                 
                 JugadorMapamundi.objetoRecogido1 = false;
                 JugadorMapamundi.objetoRecogido2 = false;
