@@ -6,19 +6,6 @@ const maquinaEstados = {
 
     cambiarEstado: function (nuevoEstado, objetoEntradaLocalizacion) {
 
-        const carga = document.createElement("div");
-        carga.style.position = "fixed";
-        carga.style.zIndex = "9999";
-        carga.style.top = "0px";
-        carga.style.left = "0px";
-        carga.style.width = "100%";
-        carga.style.height = "100%";
-        carga.style.backgroundImage = "url('img/loading.png')";
-        carga.style.backgroundSize = "cover";
-        carga.style.backgroundPosition = "center";
-        carga.style.opacity = "1";
-        carga.style.pointerEvents = "auto";
-
         switch (nuevoEstado) {
 
             case listadoEstados.MAPAMUNDI:
@@ -50,7 +37,6 @@ const maquinaEstados = {
                 break;
 
             case listadoEstados.NIVEL:
-                document.body.appendChild(carga);
                 maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);     
                 
                 controlesTeclado.arriba = null;
@@ -111,8 +97,6 @@ const maquinaEstados = {
                     controlesTeclado.izquierda = "ArrowLeft";
                     controlesTeclado.derecha = "ArrowRight";
 
-                    document.body.removeChild(carga);
-
                 }, 3000);
                 break;
 
@@ -126,7 +110,6 @@ const maquinaEstados = {
                 }
 
                 let intervaloId = setInterval(reducirVolumen, 150);
-                document.body.appendChild(carga);
                 maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.FINAL, "mapas/Valdemoro.json?v=" + Date.now(), 480, 288);
                 reducirVolumen();
         
@@ -292,12 +275,6 @@ const maquinaEstados = {
                       }, 100);
                     }, 20000);
                 }, 9500);
-
-                setTimeout(function() {
-
-                    document.body.removeChild(carga);
-
-                }, 3000);
                 break;
 
             case listadoEstados.PANTALLA_TITULO:

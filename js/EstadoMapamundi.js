@@ -153,6 +153,10 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     setTimeout(function() {
                         maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion); 
                     },500);
+
+                    setTimeout(function() {
+                        document.body.removeChild(carga);
+                    }, 3000);
                 }
             }
             if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
@@ -209,6 +213,10 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     setTimeout(function() {
                         maquinaEstados.cambiarEstado(listadoEstados.FINAL, objetoEntradaLocalizacion);     
                     }, 500);
+
+                    setTimeout(function() {
+                        document.body.removeChild(carga);
+                    }, 3000);
                 }
             }
         }
