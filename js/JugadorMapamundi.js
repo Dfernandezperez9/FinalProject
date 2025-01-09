@@ -942,3 +942,47 @@ JugadorMapamundi.prototype.actualizar = function (registroTemporal, mapa) {
     this.dirigir();
     this.animar();
 }
+
+JugadorMapamundi.guardarEstado = function() {
+    return {
+        objetoRecogido1: this.objetoRecogido1,
+        objetoRecogido2: this.objetoRecogido2,
+        objetoRecogido3: this.objetoRecogido3,
+        objetoRecogido4: this.objetoRecogido4,
+        objetoRecogido5: this.objetoRecogido5,
+        objetoRecogido6: this.objetoRecogido6,
+        objetoRecogido7: this.objetoRecogido7,
+        objetoRecogido8: this.objetoRecogido8,
+        objetoRecogido9: this.objetoRecogido9,
+        objetoRecogido10: this.objetoRecogido10,
+        easterRecogido1: this.easterRecogido1,
+        easterRecogido2: this.easterRecogido2,
+        easterRecogido3: this.easterRecogido3,
+        contadorObjetos: this.contadorObjetos,
+        contadorEaster: this.contadorEaster,
+        todosEasteresRecogidos: this.todosEasteresRecogidos,
+        todosColectablesRecogidos: this.todosColectablesRecogidos,
+        todosTextosDisparados: this.todosTextosDisparados
+    };
+};
+
+JugadorMapamundi.restaurarEstado = function(estado) {
+    this.objetoRecogido1 = estado.objetoRecogido1;
+    this.objetoRecogido2 = estado.objetoRecogido2;
+    this.objetoRecogido3 = estado.objetoRecogido3;
+    this.objetoRecogido4 = estado.objetoRecogido4;
+    this.objetoRecogido5 = estado.objetoRecogido5;
+    this.objetoRecogido6 = estado.objetoRecogido6;
+    this.objetoRecogido7 = estado.objetoRecogido7;
+    this.objetoRecogido8 = estado.objetoRecogido8;
+    this.objetoRecogido9 = estado.objetoRecogido9;
+    this.objetoRecogido10 = estado.objetoRecogido10;
+    this.easterRecogido1 = estado.easterRecogido1;
+    this.easterRecogido2 = estado.easterRecogido2;
+    this.easterRecogido3 = estado.easterRecogido3;
+    this.contadorObjetos = estado.contadorObjetos;
+    this.contadorEaster = estado.contadorEaster;
+    this.todosEasteresRecogidos = estado.todosEasteresRecogidos;
+    this.todosColectablesRecogidos = estado.todosColectablesRecogidos;
+    this.todosTextosDisparados = estado.todosTextosDisparados;
+};

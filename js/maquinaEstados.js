@@ -1,5 +1,6 @@
 const maquinaEstados = {
     estadoActual: null,
+    estadoJugador: null,
     iniciar: function () {
         maquinaEstados.cambiarEstado(listadoEstados.PANTALLA_TITULO);
     },
@@ -50,7 +51,9 @@ const maquinaEstados = {
 
             case listadoEstados.NIVEL:
                 maquinaEstados.estadoActual = new EstadoMapamundi(listadoEstados.NIVEL, objetoEntradaLocalizacion.rutaMapa, objetoEntradaLocalizacion.coordenadaXInicial, objetoEntradaLocalizacion.coordenadaYInicial);     
-                
+                if (maquinaEstados.estadoJugador) {
+                JugadorMapamundi.restaurarEstado(maquinaEstados.estadoJugador);
+                } else {
                 controlesTeclado.arriba = null;
                 controlesTeclado.abajo = null;
                 controlesTeclado.izquierda = null;
@@ -82,24 +85,26 @@ const maquinaEstados = {
 
                 JugadorMapamundi.todosEasterRecogidos = false;
                 JugadorMapamundi.todosObjetosRecogidos = false;
+            
 
                 document.getElementById('pInfo').innerText = `Capta a los incautos de las afueras!`;
+            }
                 
                 setTimeout(function () {
-                    document.getElementById('objeto1').style.display = 'initial';
-                    document.getElementById('objeto2').style.display = 'initial';
-                    document.getElementById('objeto3').style.display = 'initial';
-                    document.getElementById('objeto4').style.display = 'initial';
-                    document.getElementById('objeto5').style.display = 'initial';
-                    document.getElementById('objeto6').style.display = 'initial';
-                    document.getElementById('objeto7').style.display = 'initial';
-                    document.getElementById('objeto8').style.display = 'initial';
-                    document.getElementById('objeto9').style.display = 'initial';
-                    document.getElementById('objeto10').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido1) document.getElementById('objeto1').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido2) document.getElementById('objeto2').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido3) document.getElementById('objeto3').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido4) document.getElementById('objeto4').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido5) document.getElementById('objeto5').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido6) document.getElementById('objeto6').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido7) document.getElementById('objeto7').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido8) document.getElementById('objeto8').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido9) document.getElementById('objeto9').style.display = 'initial';
+                    if (!JugadorMapamundi.objetoRecogido10) document.getElementById('objeto10').style.display = 'initial';
 
-                    document.getElementById('easter1').style.display = 'initial';
-                    document.getElementById('easter2').style.display = 'initial';
-                    document.getElementById('easter3').style.display = 'initial';
+                    if (!JugadorMapamundi.easterRecogido1) document.getElementById('easter1').style.display = 'initial';
+                    if (!JugadorMapamundi.easterRecogido2) document.getElementById('easter2').style.display = 'initial';
+                    if (!JugadorMapamundi.easterRecogido3) document.getElementById('easter3').style.display = 'initial';
                 }, 100);
 
                 setTimeout(function() {
@@ -116,7 +121,7 @@ const maquinaEstados = {
 
                 function reducirVolumen() {
                     audio.musica.volume -= 0.01;
-                    if (audio.musica.volume <= 0.03) {
+                    if (audio.musica.volume <= 0.02) {
                         audio.musica.volume = 0;
                     }
                 }

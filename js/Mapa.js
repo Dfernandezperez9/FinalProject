@@ -1,5 +1,3 @@
-
-
 function Mapa (objetoJSON) {
     
     this.posicion = new Punto (0, 0);
@@ -774,6 +772,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoUno.left < rectPersonaje.right && rectEnemigoUno.right > rectPersonaje.left && rectEnemigoUno.top < rectPersonaje.bottom && rectEnemigoUno.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {       
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
@@ -856,6 +855,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoDos.left < rectPersonaje.right && rectEnemigoDos.right > rectPersonaje.left && rectEnemigoDos.top < rectPersonaje.bottom && rectEnemigoDos.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
@@ -936,6 +936,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoTres.left < rectPersonaje.right && rectEnemigoTres.right > rectPersonaje.left && rectEnemigoTres.top < rectPersonaje.bottom && rectEnemigoTres.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
@@ -1016,6 +1017,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoCuatro.left < rectPersonaje.right && rectEnemigoCuatro.right > rectPersonaje.left && rectEnemigoCuatro.top < rectPersonaje.bottom && rectEnemigoCuatro.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
@@ -1096,6 +1098,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoCinco.left < rectPersonaje.right && rectEnemigoCinco.right > rectPersonaje.left && rectEnemigoCinco.top < rectPersonaje.bottom && rectEnemigoCinco.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
@@ -1176,6 +1179,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoSeis.left < rectPersonaje.right && rectEnemigoSeis.right > rectPersonaje.left && rectEnemigoSeis.top < rectPersonaje.bottom && rectEnemigoSeis.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
@@ -1256,6 +1260,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoSiete.left < rectPersonaje.right && rectEnemigoSiete.right > rectPersonaje.left && rectEnemigoSiete.top < rectPersonaje.bottom && rectEnemigoSiete.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
@@ -1336,6 +1341,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoOcho.left < rectPersonaje.right && rectEnemigoOcho.right > rectPersonaje.left && rectEnemigoOcho.top < rectPersonaje.bottom && rectEnemigoOcho.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
@@ -1416,6 +1422,7 @@ Mapa.prototype.detectarColision = function() {
             const rectPersonaje = personaje.getBoundingClientRect();
     
             if (rectEnemigoNueve.left < rectPersonaje.right && rectEnemigoNueve.right > rectPersonaje.left && rectEnemigoNueve.top < rectPersonaje.bottom && rectEnemigoNueve.bottom > rectPersonaje.top) {
+                maquinaEstados.estadoJugador = JugadorMapamundi.guardarEstado();
                 if (maquinaEstados.estadoActual.idEstado === listadoEstados.MAPAMUNDI) {
                     maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 
