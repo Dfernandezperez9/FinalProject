@@ -4,6 +4,7 @@ function EstadoMapamundi (idEstado, rutaMapa, xInicial, yInicial) {
     this.mapaListo = false;
     this.mapa = null;
     this.jugadorMapamundi = null;
+
     ajax.cargarArchivo(rutaMapa, function (objetoJSON) {
         that.mapa = new Mapa(objetoJSON, idEstado);
         that.mapaListo = true;
@@ -147,7 +148,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     }, 3000);
                 }
             }
-            if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
+            if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) && JugadorMapamundi.contadorObjetos === 10 || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2) && JugadorMapamundi.contadorObjetos === 10) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "Hacia Afueras") {
                     document.body.appendChild(carga);
                     setTimeout(function() {
@@ -207,7 +208,7 @@ EstadoMapamundi.prototype.actualizar = function (registroTemporal) {
                     }, 3000);
                 }
             }
-            if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2)) {
+            if (teclado.teclaPulsada(controlesTeclado.entrarLocalizacion) && JugadorMapamundi.contadorObjetos === 10 || teclado.teclaPulsada(controlesTeclado.entrarLocalizacion2) && JugadorMapamundi.contadorObjetos === 10) {
                 if (rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral) && nombre == "De vuelta a casa") {
                     document.body.appendChild(carga);
                     setTimeout(function() {

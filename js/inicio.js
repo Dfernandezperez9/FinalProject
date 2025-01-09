@@ -18,5 +18,4 @@ const inicio = {
 
 document.addEventListener("DOMContentLoaded", function () {
     inicio.iniciarJuego();
-
 }, false);

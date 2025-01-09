@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="48" tileheight="48" infinite="0" nextlayerid="15" nextobjectid="116">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="48" tileheight="48" infinite="0" nextlayerid="17" nextobjectid="134">
  <editorsettings>
   <export target="Valdemoro.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" name="AssetsGlobal" tilewidth="48" tileheight="48" tilecount="6400" columns="80">
-  <image source="../img/AssetsGlobal.png" trans="ff00ff" width="3840" height="3840"/>
+  <image source="../../../FinalPorject/Las_vacaciones_del_Data/img/AssetsGlobal.png" trans="ff00ff" width="3840" height="3840"/>
  </tileset>
  <layer id="1" name="Mapa" width="40" height="40">
   <data encoding="csv">
@@ -94,6 +94,24 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6315,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup color="#ff0000" id="15" name="ObjetoEnemigos">
+  <object id="117" name="EnemigoUno" x="193" y="815" width="46" height="47"/>
+  <object id="118" name="EnemigoDos" x="578" y="1248" width="44" height="46"/>
+  <object id="119" name="EnemigoTres" x="49" y="1633" width="46" height="46"/>
+  <object id="120" name="EnemigoCuatro" x="1298" y="1345" width="45" height="47"/>
+  <object id="121" name="EnemigoCinco" x="1106" y="1009" width="45" height="45"/>
+  <object id="123" name="EnemigoSeis" x="1344" y="481" width="47" height="46"/>
+  <object id="125" name="EnemigoSiete" x="1154" y="146" width="46" height="45"/>
+  <object id="126" name="EnemigoOcho" x="529" y="1633" width="45" height="46"/>
+  <object id="127" name="EnemigoNueve" x="1536" y="1584" width="46" height="46"/>
+ </objectgroup>
+ <objectgroup color="#000000" id="16" name="ObjetoTexto">
+  <object id="128" x="433.778" y="958.667" width="45.7778" height="49.7778"/>
+  <object id="129" x="290.222" y="1393.33" width="42.6667" height="44.4444"/>
+  <object id="130" x="1105.33" y="1536.89" width="44" height="45.7778"/>
+  <object id="132" x="1682.22" y="1201.78" width="44" height="45.3333"/>
+  <object id="133" x="337.78" y="383.111" width="43.5556" height="48"/>
+ </objectgroup>
  <objectgroup color="#00ff00" id="7" name="ObjetoEaster">
   <object id="11" x="1583.5" y="1872.83" width="47.3333" height="46"/>
   <object id="12" x="1344.83" y="816.834" width="46" height="46"/>
@@ -169,6 +187,7 @@
   <object id="88" x="868.889" y="1777.78" width="86.6667" height="42.2222"/>
   <object id="89" x="55.5556" y="1155.56" width="124.444" height="180"/>
   <object id="90" x="106.667" y="1346.67" width="80" height="275.556"/>
+  <object id="116" x="1401.26" y="494.035" width="314.386" height="116.772"/>
  </objectgroup>
  <objectgroup color="#ff00ff" id="11" name="ObjetoEdificios">
   <object id="91" x="97.7778" y="122.222" width="115.556" height="186.667"/>
@@ -180,10 +199,10 @@
   <object id="97" x="702.222" y="206.667" width="182.222" height="171.111"/>
  </objectgroup>
  <objectgroup color="#ffaa00" id="12" name="ObjetoPuertas">
-  <object id="98" name="Cabaña abandonada" x="885.833" y="886.667" width="5.5" height="6"/>
-  <object id="99" name="Cabaña abandonada" x="981" y="1031.17" width="6" height="5.6667"/>
-  <object id="100" name="Cabaña abandonada" x="836.667" y="1270.17" width="7.1667" height="5.8333"/>
-  <object id="101" name="Cabaña abandonada" x="1845.67" y="1797.67" width="5" height="6.5"/>
+  <object id="98" name="Caseta abandonada uno" x="885.833" y="886.667" width="5.5" height="6"/>
+  <object id="99" name="Caseta abandonada dos" x="981" y="1031.17" width="6" height="5.6667"/>
+  <object id="100" name="Caseta abandonada tres" x="836.667" y="1270.17" width="7.1667" height="5.8333"/>
+  <object id="101" name="Caseta abandonada cuatro" x="1845.67" y="1797.67" width="5" height="6.5"/>
   <object id="102" name="Hacia Afueras" x="1876" y="242.667" width="40" height="38.6667"/>
  </objectgroup>
  <objectgroup color="#0000ff" id="14" name="ObjetoColectables">

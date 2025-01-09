@@ -20,4 +20,4 @@ const dimensiones = {
     obtenerTotalTiles: function () {
         return dimensiones.obtenerTilesHorizontales() * dimensiones.obtenerTilesVerticales();
     }
-}  
+}

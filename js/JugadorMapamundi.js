@@ -38,6 +38,7 @@ function JugadorMapamundi(posicionInicialEnPixeles) {
     this.aplicarEstilos();
 }
 
+
 JugadorMapamundi.prototype.aplicarEstilos = function () {
     let idHTML = 'jugador';
  
@@ -54,6 +55,7 @@ JugadorMapamundi.prototype.aplicarEstilos = function () {
 }
 
 JugadorMapamundi.prototype.comprobarColisiones = function (mapa) {
+
     this.colisionArriba = false;
     this.colisionAbajo = false;
     this.colisionIzquierda = false;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="48" tileheight="48" infinite="0" nextlayerid="8" nextobjectid="130">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="48" tileheight="48" infinite="0" nextlayerid="9" nextobjectid="139">
  <editorsettings>
   <export target="Afueras.json" format="json"/>
  </editorsettings>
@@ -50,6 +50,17 @@
 3161,3162,3163,3164,3165,3166,3167,3168,3169,3170,3171,3172,3173,3174,3175,3176,3177,3178,3179,3180,3181,3182,3183,3184,3185,3186,3187,3188,3189,3190,3191,3192,3193,3194,3195,3196,3197,3198,3199,3200
 </data>
  </layer>
+ <objectgroup color="#ff0000" id="8" name="ObjetoEnemigos">
+  <object id="130" name="EnemigoUno" x="385.895" y="240.351" width="43.7895" height="45.614"/>
+  <object id="131" name="EnemigoDos" x="1394.6" y="97.5439" width="44.2807" height="44.7018"/>
+  <object id="132" name="EnemigoTres" x="1538.74" y="1777.68" width="44.7719" height="44.2807"/>
+  <object id="133" name="EnemigoCuatro" x="289.333" y="673.684" width="44.7018" height="44.7719"/>
+  <object id="134" name="EnemigoCinco" x="289.754" y="1345.19" width="44.7018" height="43.8596"/>
+  <object id="135" name="EnemigoSeis" x="578.526" y="1584.98" width="43.8596" height="45.6842"/>
+  <object id="136" name="EnemigoSiete" x="1537.4" y="1343.44" width="46.0351" height="46.4561"/>
+  <object id="137" name="EnemigoOcho" x="1346.11" y="1249.12" width="45.193" height="46.4561"/>
+  <object id="138" name="EnemigoNueve" x="1106.32" y="768.982" width="44.7018" height="44.7018"/>
+ </objectgroup>
  <objectgroup color="#00ff00" id="6" name="ObjetoEaster">
   <object id="114" x="864.833" y="865" width="46.6667" height="45.8333"/>
   <object id="115" x="1440.5" y="432.5" width="46.6667" height="47.1667"/>
@@ -144,7 +155,7 @@
   <object id="123" x="1590" y="1636" width="36" height="36"/>
   <object id="124" x="1499" y="1591" width="27" height="132"/>
  </objectgroup>
- <objectgroup color="#ff0000" id="7" name="ObjetoTexto">
+ <objectgroup color="#000000" id="7" name="ObjetoTexto">
   <object id="125" x="1105.5" y="241.5" width="45.5" height="44.5"/>
   <object id="126" x="193.5" y="1056" width="46" height="46"/>
   <object id="127" x="1106" y="1631" width="43.5" height="49"/>

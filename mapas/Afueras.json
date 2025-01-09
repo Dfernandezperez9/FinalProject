@@ -54,6 +54,117 @@
          "y":0
         }, 
         {
+         "color":"#ff0000",
+         "draworder":"topdown",
+         "id":8,
+         "name":"ObjetoEnemigos",
+         "objects":[
+                {
+                 "height":45.6140350877193,
+                 "id":130,
+                 "name":"EnemigoUno",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":43.7894736842105,
+                 "x":385.894736842105,
+                 "y":240.350877192982
+                }, 
+                {
+                 "height":44.7017543859649,
+                 "id":131,
+                 "name":"EnemigoDos",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44.280701754386,
+                 "x":1394.59649122807,
+                 "y":97.5438596491228
+                }, 
+                {
+                 "height":44.2807017543857,
+                 "id":132,
+                 "name":"EnemigoNueve",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44.7719298245613,
+                 "x":1538.73684210526,
+                 "y":1777.68421052632
+                }, 
+                {
+                 "height":44.7719298245614,
+                 "id":133,
+                 "name":"EnemigoTres",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44.7017543859649,
+                 "x":289.333333333333,
+                 "y":673.684210526316
+                }, 
+                {
+                 "height":43.859649122807,
+                 "id":134,
+                 "name":"EnemigoCinco",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44.7017543859648,
+                 "x":289.754385964912,
+                 "y":1345.19298245614
+                }, 
+                {
+                 "height":45.6842105263161,
+                 "id":135,
+                 "name":"EnemigoSeis",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":43.859649122807,
+                 "x":578.526315789474,
+                 "y":1584.98245614035
+                }, 
+                {
+                 "height":46.4561403508776,
+                 "id":136,
+                 "name":"EnemigoOcho",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":46.0350877192984,
+                 "x":1537.40350877193,
+                 "y":1343.43859649123
+                }, 
+                {
+                 "height":46.4561403508771,
+                 "id":137,
+                 "name":"EnemigoSiete",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":45.1929824561405,
+                 "x":1346.10526315789,
+                 "y":1249.12280701754
+                }, 
+                {
+                 "height":44.7017543859649,
+                 "id":138,
+                 "name":"EnemigoCuatro",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":44.7017543859649,
+                 "x":1106.31578947368,
+                 "y":768.982456140351
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
          "color":"#00ff00",
          "draworder":"topdown",
          "id":6,
@@ -1070,7 +1181,7 @@
          "y":0
         }, 
         {
-         "color":"#ff0000",
+         "color":"#000000",
          "draworder":"topdown",
          "id":7,
          "name":"ObjetoTexto",
@@ -1326,8 +1437,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":8,
- "nextobjectid":130,
+ "nextlayerid":9,
+ "nextobjectid":139,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.11.0",
