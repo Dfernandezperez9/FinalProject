@@ -65,7 +65,7 @@ Rectangulo.prototype.animacionEnemigoUnoMapaUno = function (imagenFondo1, imagen
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: this.x + 'px', top: this.y + 'px', background: `url(${imagenFondo1})` },
@@ -153,7 +153,7 @@ Rectangulo.prototype.animacionEnemigoDosMapaUno = function (imagenFondo1, imagen
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -241,7 +241,7 @@ Rectangulo.prototype.animacionEnemigoTresMapaUno = function (imagenFondo1, image
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -315,7 +315,7 @@ Rectangulo.prototype.animacionEnemigoCuatroMapaUno = function (imagenFondo1, ima
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -389,7 +389,7 @@ Rectangulo.prototype.animacionEnemigoCincoMapaUno = function (imagenFondo1, imag
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -463,7 +463,7 @@ Rectangulo.prototype.animacionEnemigoSeisMapaUno = function (imagenFondo1, image
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: this.x + 'px', top: this.y + 'px', background: `url(${imagenFondo1})` },
@@ -551,7 +551,7 @@ Rectangulo.prototype.animacionEnemigoSieteMapaUno = function (imagenFondo1, imag
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -625,7 +625,7 @@ Rectangulo.prototype.animacionEnemigoOchoMapaUno = function (imagenFondo1, image
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.5s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: this.x + 'px', top: this.y + 'px', background: `url(${imagenFondo10})` },
@@ -721,7 +721,7 @@ Rectangulo.prototype.animacionEnemigoNueveMapaUno = function (imagenFondo1, imag
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -797,7 +797,7 @@ Rectangulo.prototype.animacionEnemigoUnoMapaDos = function (imagenFondo1, imagen
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out , top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out , top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y - 10) + 'px', background: `url(${imagenFondo1})` },
@@ -901,7 +901,7 @@ Rectangulo.prototype.animacionEnemigoDosMapaDos = function (imagenFondo1, imagen
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out, top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out, top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo10})` },
@@ -1011,7 +1011,7 @@ Rectangulo.prototype.animacionEnemigoTresMapaDos = function (imagenFondo1, image
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out, top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out, top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y - 10) + 'px', background: `url(${imagenFondo1})` },
@@ -1121,7 +1121,7 @@ Rectangulo.prototype.animacionEnemigoCuatroMapaDos = function (imagenFondo1, ima
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out, top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out, top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -1221,7 +1221,7 @@ Rectangulo.prototype.animacionEnemigoCincoMapaDos = function (imagenFondo1, imag
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out, top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out, top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y - 10) + 'px', background: `url(${imagenFondo1})` },
@@ -1348,7 +1348,7 @@ Rectangulo.prototype.animacionEnemigoSeisMapaDos = function (imagenFondo1, image
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out, top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out, top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -1448,7 +1448,7 @@ Rectangulo.prototype.animacionEnemigoSieteMapaDos = function (imagenFondo1, imag
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out, top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out, top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y - 10) + 'px', background: `url(${imagenFondo1})` },
@@ -1577,7 +1577,7 @@ Rectangulo.prototype.animacionEnemigoOchoMapaDos = function (imagenFondo1, image
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out, top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out, top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y) + 'px', background: `url(${imagenFondo1})` },
@@ -1683,7 +1683,7 @@ Rectangulo.prototype.animacionEnemigoNueveMapaDos = function (imagenFondo1, imag
     elem.style.width = this.ancho + 'px';
     elem.style.height = this.alto + 'px';
     elem.style.zIndex = "5";
-    elem.style.transition = "left 0.2s ease-in-out, top 0.2s ease-in-out";
+    elem.style.transition = "left 0.5s ease-in-out, top 0.5s ease-in-out";
 
     const keyframes = [
         { pct: 0, left: (this.x) + 'px', top: (this.y - 10) + 'px', background: `url(${imagenFondo1})` },
